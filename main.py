@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     receiver_chat_id = os.getenv('RECEIVER_CHAT_ID')
 
-    logger.debug(
+    logger.info(
         "Starting with args:\nAPI_KEY={}\nLISTENER_HOST={}\nLISTENER_PORT={}\nRECEIVER_CHAT_ID={}"
         .format(api_key, listener_host, listener_port, receiver_chat_id)
     )
