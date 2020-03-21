@@ -25,6 +25,6 @@ class BotConnector:
             "chat_id": self.chat_id,
             "text": message
         }
-        self.logger.info("Sending message to chat '{}': {}", self.chat_id, message)
+        self.logger.info("Sending message to chat '{}': {}".format(self.chat_id, message))
         res = requests.post(url=method_url, json=json)
         self.logger.debug(res)
