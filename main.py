@@ -29,4 +29,4 @@ if __name__ == "__main__":
     bot = BotConnector(api_key=api_key, chat_id=receiver_chat_id)
 
     tg_proxy = SimpleTgProxy(bot=bot)
-    tg_proxy.run_async(listener_host, listener_port)
+    tg_proxy.run(listener_host, listener_port)
